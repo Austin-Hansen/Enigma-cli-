@@ -1,3 +1,6 @@
+#ifndef __VIEW_H
+#define __VIEW_H
+
 #include "view.h"
 #include <iostream>
 #include <string>
@@ -10,3 +13,4 @@ class View {
         void help();
 
 };
+#endif

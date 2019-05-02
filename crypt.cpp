@@ -29,7 +29,6 @@ Crypt::crypt() { }
         //all start at A, or 65
         char i;
           i=l-'A';
-
        }
        int index_of_rot(std::vector<char>array, int l){
            return(array.at(l))
@@ -55,12 +54,4 @@ Crypt::crypt() { }
          char reflect = reflector.at(modulus_alph(index(l)-L))
          // pass through rotors again to complete circuit(L^-1M^-1R^-1P^-1), confusing
          // I need to verify these formulas, msg->r->m->l->reflector->l->m->r-> letter, full msg
-        // int Linv = modulus_alph(index_of_rot(rotors.at(0), alphabet.at(modulus_alph(index(ref)+L))))
-        // int Minv = modulus_alph(index_of_rot(rotors.at(1),alphabet.at(modulus_alph(d+M))-M))
-        // char final_let = modulus_alph(index_of_rot(rotors.at(1),alphabet.at(modulus_alph(e+M))-R))
-
-         out = out +final_let
-
-     }
-
-   }
+        // int Linv = modulus_alph(index_

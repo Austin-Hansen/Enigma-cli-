@@ -1,3 +1,6 @@
+#ifndef __VIEW_H
+#define __VIEW_H
+
 #include <vector>
 
 //Permutation formula E=PRMLUL^-1M^-1R^-1P^-1
@@ -19,3 +22,6 @@ class Crypt {
             int index_of_rot(char array,int l);
             void turn_which_rotor();
 };
+
+#endif
+
