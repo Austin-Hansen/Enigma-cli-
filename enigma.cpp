@@ -18,7 +18,7 @@ int Enigma::get_int(std::string prompt,std::string title){
     while(true) {
           try {
               std::string s;
-              //s=Dialogs::input(prompt,title);
+             // s=Dialogs::input(prompt,title);
               std::getline(std::cin,s);
               if(s == ""||s== "CANCEL") break;
 
@@ -32,6 +32,7 @@ int Enigma::get_int(std::string prompt,std::string title){
        }
      throw std::runtime_error{prompt + " was not entered"};
 }
+
 
 void Enigma::execute_cmd(int cmd){
       switch(cmd){

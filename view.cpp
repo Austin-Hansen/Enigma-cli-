@@ -19,8 +19,8 @@ std::cout<<raw_strp<<std::endl;
 
 std::string raw_str= R"( 
 
-(1) Encryption          (3) Help
-(2) Deryption           (4) History
+(1) Encryption          (3) Help         (7)About
+(2) Set Rotors to       (4) History      (8)Set Rotors to Default
 
 )";
 
@@ -29,6 +29,20 @@ std::cout<<raw_str<<std::endl;
 }
 
 void View::help(){
+std::string raw_strp=R"( 
+  Encryption: Encrypts your message
+  
+  Set Rotors to: Changes your rotor to a different one, ex: I to III
+
+  Help: prints this screen
+
+  History: prints a small blurb about the early history of the first enigma machines
+
+  About: Talks about your rotor types
+
+  Set Rotors to default: sets rotors to I=R, II=M, III=L
+)";
+std::cout<<raw_strp<<std::endl;
 
 }
 

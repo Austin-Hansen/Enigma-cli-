@@ -49,7 +49,7 @@ char Machine::runmach(char in){
 
     for (int i=0;i<27;i++){
        if(in==alphabet.at(i)){
-          std::cout<< *p << std::endl;
+         // std::cout<< *p << std::endl;
          index = i;
          break;
        }
